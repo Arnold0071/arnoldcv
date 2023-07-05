@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARNOLD CV</title>
+
+    <style>
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 180px;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script> 
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="NEW.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.facebook.com/arar.magalona007" target="_blank">
+              <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/arnold-magalona-104344163" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/Arnold-Mags" target="_blank">
+            <i data-feather="github"></i>
+         </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="https://drive.google.com/file/d/1ag1UXcnv5F7bPmqx_2GIwFmrk6eTDFGw/view?usp=sharing" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV  </span>
+          </a>
+        </div>
+
+        <!--Certificates BUTTON-->
+        <div class="w3-container w3-padding-16">
+            <a href="https://drive.google.com/file/d/1HOGr2QYuvOEgTLaKi4aSwA-kOE-99d0w/view?usp=sharing" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank">
+              <i data-feather="search" style="vertical-align: -0.35em;"></i>
+              <span class="w3-margin-left download-text">MY CERTIFICATES</span>
+            </a>
+          </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"To work with the company where I can contribute my skills and to develop professionally."</p>
+            <h1 style="font-size: 20;">ARNOLD A. MAGALONA</h1>
+            <h3>IT Professional</h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2"> 
+                Hi there 👋, my name is <strong>ARNOLD!</strong>
+                I am a highly dedicated and driven IT professional with a deep passion for utilizing technology to create innovative solutions. With extensive experience in developing websites using WordPress and building web applications using PHP. I have hands-on experience in computer hardware servicing. This knowledge allows me to troubleshoot and resolve hardware-related issues efficiently. Whether it's diagnosing problems, replacing components, or optimizing system performance, I possess the technical skills necessary to ensure smooth operation and optimal functionality of computer systems.
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+              <div class="">
+                <h4>St. Paul University Surigao</h4>
+                <p><i>July 2017 - July 2021 | January 2023 - Present</i></p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li> ⦿ Designate as Software Developer</li>
+                  <li> ⦿ Support and Assist in all ICT related events</li>
+                </ul>
+              </div>
+              <div class="">
+                <h4>Department of Information and Communications Technology</h4>
+                <p><i>August 2021 - December 2022 </i></p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li> ⦿ Designate as Planning Officer</li>
+                  <li> ⦿ Provides technical support for the creation and hosting of all LGU websites in the CARAGA Region.</li>
+                  <li> ⦿ Cybersafe Learning for Education</li>
+                  <li> ⦿ Administrative Works</li>
+                </ul>
+              </div>
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+                <h4>St. Paul University Surigao</h4>
+                <p>Bachelor of Science in Computer Engineering </p>
+                <p><i>2011 - 2017 </i></p>
+                <!--h4>Malimono National High School</h4>
+                <p>Secondary </p>
+                <p><i>2007-2011 </i></p>
+                <h4>Malimono Central Elementary School</h4>
+                <p>Elementary </p>
+                <p><i>2001-2007 </i></p-->
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <h4>Software Development</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Wordpress, PHP, MySQL, VB.net, Python</li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <h4>Technical skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Computer Hardware Servicing, Graphics Design</li>
+                </ul>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY WORKS</h3>
+              <div class="gallery">
+                <a target="_blank" href="img/13.jpg">
+                  <img src="img/13.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Software Development</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img/10.jpg">
+                  <img src="img/10.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Computer Networks</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img/4.jpg">
+                  <img src="img/4.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Computer Hardware</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img/8.jpg">
+                  <img src="img/8.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Cybersecurity Awareness Training</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="img/6.jpg">
+                  <img src="img/6.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Wordpress CMS Training</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="img/3.jpg">
+                  <img src="img/3.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">System Analysis & Design Training</div>
+              </div>
+            </div>
+
+            <!--REFERENCE SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY REFERENCES</h3>
+              <h4>Engr. Roland P. Taganahan</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>0938 1350 976</li>
+                <li>roland.taganahan@dict.gov.ph</li>
+              </ul>
+              <h4>Engr. John Pearl Manungas</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>0910 5717 146</li>
+                <li>johnpearl.manungas@gmail.com</li>
+              </ul>
+              <h4>Engr. Steven Merano</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>0956 0132 334</li>
+                <li>venzsolutions.mystrikingly.com</li>
+              </ul>
+            </div>            
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: <strong>Arnold A. Magalona</strong></p>
+              <p>Adress:<strong> Malimono, Surigao del Norte</strong></p>
+              <p>Phone number: <strong>+639478895495</strong></p>
+              <p>E-mail: <strong>arnoldmagalona007@gmail.com</strong></p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023 - ArnoldMags_SysDev</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
